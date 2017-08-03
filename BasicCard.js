@@ -3,8 +3,13 @@
 //The constructed object should have a `front` property that contains the text on the front of the card.
 //The constructed object should have a `back` property that contains the text on the back of the card.
 
-module.exports = BasicCard
+function BasicCard(front, back) {
+    this.front = front;
+    this.back = back;
 
-// Require the 'inquirer' package
-var inquirer = require('inquirer');
+};
+
+module.exports = BasicCard;
+
+
 
