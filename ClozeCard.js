@@ -12,14 +12,9 @@ function ClozeCard(fullText, cloze) {
     this.partial = fullText.replace(cloze, "...");
 
 };
-//var clozeCard = new ClozeCard (“George Washington was the first POTUS.“, “George Washington”)
-//console.log(clozeCard.fullText);
-//console.log(clozeCard.cloze);
-//console.log(clozeCard.partial);
-//
- 
 
-var newCloze = new ClozeFlashcard('My favorite color is blue.', 'blue');
-newCloze.create();
 
+//var ClozeCard = new ClozeCard('Who was the first president of the United States?', 'George Washington');
+//ClozeCard.create();
+//console.log(ClozeCard);
 module.exports = ClozeCard;
