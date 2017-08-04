@@ -6,11 +6,13 @@
 //The constructor should throw or log an error when the cloze deletion does _not_ appear in the input text.
 //Use prototypes to attach these methods, wherever possible.
 //The bulk of this assignment is implementing `ClozeCard`. If you build a robust `ClozeCard` implementation, feel free to try your hand at implementing a front-end, as well.
-function ClozeCard(fullText, cloze) {
+function ClozeCard(fullText, cloze, err) {
     this.fullText = fullText;
     this.cloze = cloze;
     this.partial = fullText.replace(cloze, "...");
-
+    if (!fullText.includes(cloze)) {
+        console.log("ERROR: This doesn't work -- oops!" );
+    }
 };
 
 
